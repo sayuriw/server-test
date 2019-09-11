@@ -1,0 +1,25 @@
+{
+  "name": "server-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "server": "node server.js",
+    "dev": "parcel src/index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "parcel": "^1.12.3",
+    "uid": "0.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "1.12.3",
+    "sass": "^1.23.0-module.beta.1"
+  }
+}
