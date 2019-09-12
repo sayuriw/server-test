@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "server": "node server.js",
+    "start": "run-p server dev",
+    "server": "nodemon -w server.js server.js",
     "dev": "parcel src/index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,11 +15,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
     "parcel": "^1.12.3",
     "uid": "0.0.2"
   },
   "devDependencies": {
     "parcel-bundler": "1.12.3",
-    "sass": "^1.23.0-module.beta.1"
+    "sass": "^1.23.0-module.beta.1",
+    "nodemon": "^1.19.2"
   }
 }

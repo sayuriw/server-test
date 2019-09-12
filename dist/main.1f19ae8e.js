@@ -193,7 +193,7 @@ var _services = require("./services");
 //   } catch (error) {
 //     console.log(error)
 //   }
-// }
+// } 
 var editingId;
 (0, _services.getAllCards)().then(function (cards) {
   return cards.forEach(createCard);
@@ -285,7 +285,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60265" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61299" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

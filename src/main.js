@@ -11,7 +11,7 @@ import { postCard, getAllCards, deleteCard, getSingleCard, changeCard } from './
 //   } catch (error) {
 //     console.log(error)
 //   }
-// }
+// } 
 
 let editingId
 
